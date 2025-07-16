@@ -24,8 +24,8 @@ const Movies = () => {
     sortField: 'id'
   },
       headers: {
-    'x-rapidapi-key': '21c260a2bcmsh9d392c3e04d959bp168093jsn7491aa393ae2',
-    'x-rapidapi-host': 'imdb236.p.rapidapi.com'
+    'x-rapidapi-key': 'rapid api key',
+    'x-rapidapi-host': 'rapid api host'
   }
     };
     try {
