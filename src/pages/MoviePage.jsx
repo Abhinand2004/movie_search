@@ -12,13 +12,13 @@ const MoviePage = () => {
     useEffect(() => {
         const fetchMovie = async () => {
          const options = {
-  method: 'GET',
-  url: `https://imdb236.p.rapidapi.com/api/imdb/${id}`,
-  headers: {
-    'x-rapidapi-key': 'rapid api key',
-    'x-rapidapi-host': 'rapid api host'
-  }
-};
+          method: 'GET',
+          url: `https://imdb236.p.rapidapi.com/api/imdb/${id}`,
+         headers: {
+          'x-rapidapi-key': '',
+           'x-rapidapi-host': ''
+        }
+        };
             try {
                 const response = await axios.request(options);
                 console.log(response.data);

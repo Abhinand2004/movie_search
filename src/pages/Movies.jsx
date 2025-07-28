@@ -11,7 +11,7 @@ const Movies = () => {
   const [message, setMessage] = useState("");
 
 
-  const searchMovies = async (title) => {
+  const searchMovies = async () => {
     const options = {
       method: 'GET',
       url: 'https://imdb236.p.rapidapi.com/api/imdb/search',
@@ -24,8 +24,8 @@ const Movies = () => {
     sortField: 'id'
   },
       headers: {
-    'x-rapidapi-key': 'rapid api key',
-    'x-rapidapi-host': 'rapid api host'
+    'x-rapidapi-key': '',
+    'x-rapidapi-host': ''
   }
     };
     try {
@@ -45,9 +45,10 @@ const Movies = () => {
       setMovies([]);
       setIsLoading(false);
     }
-  };console.log(movies);
-  
+  };
 
+  console.log(movies);
+  
   if (isLoading) {
 
     return (
